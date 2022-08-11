@@ -18,8 +18,9 @@ The following sensors can be configured:
 4. **Force/Torque Sensor**: 
 
 **OTHER HARDWARE**
+1. **Stryker Orthopedic Drill Unit and Bits**:  
 1. **Arduino Uno**: Single Unit with usb cord
-2. **Power Supply**: Some power supply to run the 
+2. **Power Supply**: ? May not be necessary
 3. **Preamp for Microphone**: This work uses an AudioBox Usb preamp, but most preamps with associated Drivers installed should work as long as Reaper can detect them. 
 2. **Drill Attachment**: See CAD file attached
 3. **Retroreflective Spheres (NDI)**: These can be purchased here
@@ -50,5 +51,6 @@ The GUI is written with PyQt5 and can operate any of the sensors. For full funct
 
 
 ### **<u>TODO (Future)</u>**
-1. Remove Reaper Reliance
+1. Update CAD to attach to same drill position
+2. Remove Reaper Reliance
 2. ROS 2 Package integration
