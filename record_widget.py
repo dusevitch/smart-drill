@@ -32,7 +32,9 @@ class WidgetGallery(QDialog):
     
     def topGroupBox(self):
         self.topGroupBox = QGroupBox("File")
-            
+        
+        layout = QVBoxLayout()
+        layout.addWidget(radioButtonMicrophone)     
     
     def createTopLeftGroupBox(self):
         self.topLeftGroupBox = QGroupBox("Settings")
@@ -41,10 +43,11 @@ class WidgetGallery(QDialog):
         radioButtonIMUSensor = QCheckBox("IMU")
         radioButtonCurrentSensor = QCheckBox("Current Sensor")
         radioButtonFTSensor = QCheckBox("F/T Sensor")
+        radioButtonNDISensor = QCheckBox("NDI Sensor")
         radioButtonMicrophone.setChecked(True)
         radioButtonIMUSensor.setChecked(True)
         radioButtonCurrentSensor.setChecked(True)
-
+        radioButtonNDISensor.setChecked(True)
 
         # fileLabel = QLabel("FileName")
         # filePath = QLineEdit()
@@ -55,7 +58,7 @@ class WidgetGallery(QDialog):
         layout.addWidget(radioButtonIMUSensor)
         layout.addWidget(radioButtonCurrentSensor)
         layout.addWidget(radioButtonFTSensor)
-        
+        layout.addWidget(radioButtonNDISensor)
         # layout.addWidget(fileLabel)
         # layout.addWidget(filePath)
         

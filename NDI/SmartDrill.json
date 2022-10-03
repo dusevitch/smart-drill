@@ -1,0 +1,1 @@
+{"serial-port": "/dev/ttyUSB0","definition-path":["roms", "share/roms"],"tools":[{"name": "SmartDrill_test","unique-id": "PN960556","definition": "medtronic-PN960556.rom"}]}
