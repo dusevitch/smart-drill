@@ -2,7 +2,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from csv import writer, reader
 import numpy as np
-from qwt import QwtPlot
 
 class Ui_SmartDrill(object):
     def setupUi(self, SmartDrill):

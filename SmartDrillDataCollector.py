@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from ast import main
+from GUI import main
 from PyQt5.QtWidgets import QApplication,QMainWindow,QDialog,QFileDialog,QMessageBox, QGraphicsScene
 from PyQt5 import QtGui
 import PyQt5
@@ -11,6 +11,8 @@ from sensors import NDI
 from createDialog import CreateDialog
 import time
 import threading
+from multiprocessing import Process
+
 class mainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
@@ -23,15 +25,15 @@ class mainWindow(QMainWindow):
         self.main_ui.pushButtonStartInitialize.setDisabled(True)
         self.main_ui.pushButtonStartInitialize.setText("Initializing...")
         for i in self.sensorList:
-            try:
-                self.sensorList[i].init()
-            except:
-                msgBox = QMessageBox()
-                msgBox.setText("Fail to initialize sensor {}.".format(i))
-                msgBox.setWindowTitle("Sensor Initializationi Error") 
-                msgBox.exec_()
-                self.main_ui.pushButtonStartInitialize.setDisabled(False)
-                return
+            #try:
+            self.sensorList[i].init()
+            # except:
+            #     msgBox = QMessageBox()
+            #     msgBox.setText("Fail to initialize sensor {}.".format(i))
+            #     msgBox.setWindowTitle("Sensor Initializationi Error") 
+            #     msgBox.exec_()
+            #     self.main_ui.pushButtonStartInitialize.setDisabled(False)
+            #     return
         self.areSensorInitialized = True
         self.main_ui.pushButtonTest.clicked.connect(self.startTesting)
         self.main_ui.pushButtonTest.setDisabled(False)
@@ -90,10 +92,9 @@ class mainWindow(QMainWindow):
         self.main_ui.pushButtonTest.setDisabled(True)
         self.main_ui.pushButtonRecord.setDisabled(True)
         for i in self.sensorList:
-            start = time.time()
+            self.timer[i] = float(time.time())
             try:
                 self.sensorList[i].update()
-                self.timer[i] = start
             except:
                 msgBox = QMessageBox()
                 msgBox.setText("Cannot recieve update from sensor {}.".format(i))
@@ -114,7 +115,7 @@ class mainWindow(QMainWindow):
     def stopCollection(self):
         self.main_ui.pushButtonRecord.setDisabled(True)
         self.isCollection = False
-        self.timingThread.join()
+        self.timingThread.terminate()
         for i in self.sensorList:
             try:
                 endTime = time.time()
@@ -128,33 +129,34 @@ class mainWindow(QMainWindow):
                 msgBox.setWindowTitle("Sensor Test Error") 
                 msgBox.exec_()
                 return
-        for i in self.sensorList:
-            try:
-                endTime = time.time()
-                self.sensorList[i].kill()
-            except:
-                msgBox = QMessageBox()
-                msgBox.setText("Fail to kill sensor {}".format(i))
-                msgBox.setWindowTitle("Sensor Kill Error") 
-                msgBox.exec_()
+        # for i in self.sensorList:
+        #     try:
+        #         endTime = time.time()
+        #         self.sensorList[i].kill()
+        #     except:
+        #         msgBox = QMessageBox()
+        #         msgBox.setText("Fail to kill sensor {}".format(i))
+        #         msgBox.setWindowTitle("Sensor Kill Error") 
+        #         msgBox.exec_()
 
         self.main_ui.pushButtonRecord.clicked.disconnect()
         self.main_ui.pushButtonRecord.setText("Finished")
         self.main_ui.pushButtonRecord.setStyleSheet("background-color : green")
 
     def save(self):
-        self.path= QFileDialog.getSaveFileName(None, "Select Directory", "./")    
-        self.fileInUse = self.path[0] + ".json"
-        if self.Database:
-            for i in self.sensorList:
-                self.Database.update(i,self.sensorList[i].data,self.timer[i])
-            self.Database.save(self.fileInUse)
-            self.unsaved = False
-        else:
-            msgBox = QMessageBox()
-            msgBox.setText("No Data Needs to Save.")
-            msgBox.setWindowTitle("Save Error") 
-            msgBox.exec_()
+        self.path= QFileDialog.getSaveFileName(None, "Select Directory", "./")
+        if self.path[0]:    
+            self.fileInUse = self.path[0] + ".json"
+            if self.Database:
+                for i in self.sensorList:
+                    self.Database.update(i,self.sensorList[i].data,self.timer[i])
+                self.Database.save(self.fileInUse)
+                self.unsaved = False
+            else:
+                msgBox = QMessageBox()
+                msgBox.setText("No Data Needs to Save.")
+                msgBox.setWindowTitle("Save Error") 
+                msgBox.exec_()
 
     def resetHz(self):
         for i in self.HzSetting:
@@ -164,7 +166,8 @@ class mainWindow(QMainWindow):
         self.main_ui.textBrowserInfo.append(str(Notice))
 
     def Timing(self):
-        self.timingThread = threading.Thread(target = self._Timing)
+        #self.timingThread = threading.Thread(target = self._Timing)
+        self.timingThread = Process(target = self._Timing)
         self.timingThread.start()
 
     def _Timing(self):

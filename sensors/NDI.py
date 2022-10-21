@@ -27,23 +27,30 @@ class NDI(Sensor):
     def init(self):
         if not self.isInitialized:
             try:
-                self.setupSaw(Path(self.sawSetting["SAW"]).parent,Path(self.NDISetting["JSON"]).resolve(),Path(self.NDISetting["PORTAL"]),self.Hz)
-                #self.mainWindow.pubNotice(self.ros.communicate()[0])
-                #self.connect = subprocess.Popen("rostopic pub /NDI/connect std_msgs/Bool true",stdout=subprocess.PIPE)
-                #self.connectPub.publish(Bool(True))
-                #self.mainWindow.pubNotice(self.connect.communicate()[0])
-                #self.connect.terminate()
-                #self.track = subprocess.Popen("rostopic pub /NDI/track std_msgs/Bool true",stdout=subprocess.PIPE)
-                #os.system("gnome-terminal -e " + "'rostopic pub /NDI/track std_msgs/Bool true'")
-                #self.trackPub.publish(Bool(True))
-                #self.mainWindow.pubNotice(self.track.communicate()[0])
-                #self.track.terminate()
                 rospy.init_node('smart_drill_data_collection')
-                self.stream()
-                self.isInitialized = True
             except:
-                raise
-            # rospy.init_node('smart_drill_data_collection', anonymous=True)
+                    pass
+            self.stream()
+            self.isInitialized = True
+        # if not self.isInitialized:
+        #     try:
+        #         self.setupSaw(Path(self.sawSetting["SAW"]),Path(self.NDISetting["JSON"]).resolve(),Path(self.NDISetting["PORTAL"]),self.Hz)
+        #         #self.mainWindow.pubNotice(self.ros.communicate()[0])
+        #         #self.connect = subprocess.Popen("rostopic pub /NDI/connect std_msgs/Bool true",stdout=subprocess.PIPE)
+        #         #self.connectPub.publish(Bool(True))
+        #         #self.mainWindow.pubNotice(self.connect.communicate()[0])
+        #         #self.connect.terminate()
+        #         #self.track = subprocess.Popen("rostopic pub /NDI/track std_msgs/Bool true",stdout=subprocess.PIPE)
+        #         #os.system("gnome-terminal -e " + "'rostopic pub /NDI/track std_msgs/Bool true'")
+        #         #self.trackPub.publish(Bool(True))
+        #         #self.mainWindow.pubNotice(self.track.communicate()[0])
+        #         #self.track.terminate()
+        #         rospy.init_node('smart_drill_data_collection')
+        #         self.stream()
+        #         self.isInitialized = True
+        #     except:
+        #         raise
+        #     # rospy.init_node('smart_drill_data_collection', anonymous=True)
 
     def _stream(self):
         self.tool_sub = rospy.Subscriber(self.sawSetting["rostopic"], 
@@ -53,8 +60,6 @@ class NDI(Sensor):
     def _endStream(self):
         rospy.signal_shutdown("Stop Data Collection")
         time.sleep(0.1)
-        os.killpg(os.getpgid(self.roscore), signal.SIGTERM)
-        os.killpg(os.getpgid(self.saw), signal.SIGTERM)
 
     def getFrame(self):
         initial = np.array([[1,0,0],[0,1,0],[0,0,1]])
@@ -78,13 +83,19 @@ class NDI(Sensor):
                     self.tool_transform.pose.orientation.w])
 
     def setupSaw(self,path_to_nditracking,json,port,Hz):
-        self.roscore = subprocess.Popen("roscore",stdout=subprocess.PIPE)
-        time.sleep(0.1)
-        #self.mainWindow.pubNotice(roscore.stdout.readline())
-        #os.chdir(path_to_nditracking)
-        #json = "/home/jerry/ros_catkin_ws/src/cisst-saw/sawNDITracker/share/SmartDrill.json"
-        #port = "/dev/ttyUSB0"
-        command = [path_to_nditracking,"-j",str(json),"-s",str(port),"-p",str(1 / Hz)]
-        self.saw = subprocess.Popen(command)
-        time.sleep(0.1)
-        #saw = subprocess.Popen(command,shell = True,stdout=subprocess.PIPE)
+        pass
+    #     process1 = ["killall","-9","roscore"]
+    #     subprocess.Popen(process1)
+    #     process2 =  ["killall","-9","rosmaster"]
+    #     subprocess.Popen(process2)
+    #     time.sleep(1)
+    #     subprocess.Popen("roscore")
+    #     time.sleep(1)
+    #     os.chdir(str(path_to_nditracking))
+    #     #json = "/home/jerry/ros_catkin_ws/src/cisst-saw/sawNDITracker/share/SmartDrill.json"
+    #     #port = "/dev/ttyUSB0"
+    #     command = ["./ndi_tracker","-j",str(json),"-s",str(port),"-p",str(1 / Hz)]
+    #     print(os.getcwd())
+    #     self.saw = subprocess.Popen(command)
+    #     time.sleep(0.1)
+    #     #saw = subprocess.Popen(command,shell = True,stdout=subprocess.PIPE)

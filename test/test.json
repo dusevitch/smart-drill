@@ -1,0 +1,1 @@
+{"NDI": {"sensorType": "NDI", "Hz": 50, "data": "testNDI.csv", "duration": 24.101545333862305}, "FT": {"sensorType": "FT", "Hz": 500, "data": "testFT.csv", "duration": 24.101675510406494}}

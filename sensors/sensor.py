@@ -25,15 +25,12 @@ class Sensor(ABC):
         self.canvas = FigureCanvas(self.figure)
         self.canvas.draw()
         self.isInitialized = False
-        self.visualizing = False
-        self.streaming = False
+        self.streaming = False  
 
-
-    @abstractmethod
     def init(self):
         # Function that configs sensor. Remember to set self.isInitialized = True as the last line. 
         self.stream()
-        pass
+
 
     @abstractmethod
     def _stream(self):
@@ -66,13 +63,13 @@ class Sensor(ABC):
 
     def update(self):
         # The build-in function do the sensor data collection under thread, in background.
-        self.visualizing = True
+        #elf.visualizing = True
         self.streaming = True
         
     def stop(self):
         # This function will stop appending data into self.data, but will not stop streaming
         self.streaming = False
-        self.visualizing = False
+        # self.visualizing = False
 
     def kill(self):
         # Build-in function to stop data collection by kill the thread.
@@ -90,26 +87,20 @@ class Sensor(ABC):
         self.data = []
         self.axis.clear()
 
-    def getData(self,time):
-        # Return data within certain tim stamp. Only integer are allowed.
-        assert (len(time) == 1) or (len(time) == 2),"time argument should be in size 1 or 2"
-        if len(time) == 1:
-            start_index = self.Hz * int(time)
-            end_index = self.Hz * (int(time) + 1) - 1
-        else:
-            start_index = self.Hz * int(time[0])
-            end_index = self.Hz * int(time[1]) - 1
-        assert start_index <= (len(self.data) - 1),"Try to get data beyond valid time stamp."
-        if end_index > (len(self.data) - 1):
-            end_index = len(self.data) - 1  
-        return self.data[start_index,end_index]
+    # def getData(self,time):
+    #     # Return data within certain tim stamp. Only integer are allowed.
+    #     assert (len(time) == 1) or (len(time) == 2),"time argument should be in size 1 or 2"
+    #     if len(time) == 1:True
+    #     assert start_index <= (len(self.data) - 1),"Try to get data beyond valid time stamp."
+    #     if end_index > (len(self.data) - 1):
+    #         end_index = len(self.data) - 1  
+    #     return self.data[start_index,end_index]
 
     def visualization(self):
         while True:
-            if self.visualizing:
+            if self.streaming:
                 try:
                     self.axis.clear()
-                    time.sleep(0.01)
                     self.getFrame()
                     self.figure.tight_layout()
                     self.canvas.draw()

@@ -1,362 +1,0 @@
-M- cisst 1.1.0 (git: 1.1.0-26-gf8f912eb1)
-M- CISST_ROOT: undefined
-M- cisst share: undefined
-M- cmn_m: 1, cmn_kg: 1, CISST_USE_SI_UNITS is set to 1
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-W- Class mtsNDISerial: Configure: "serial-port" in file "/home/jerry/ros_catkin_ws/src/smartdrill/NDI/SmartDrill.json" will be ignored since the serial port has already been set as: /dev/ttyUSB0
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 568 -  ResponseRead: expected "024", but received "022"
--W Class mtsNDISerial: NDI:Controller: 1.66482e+09s, #1: NDI: device firmware is not what we're expecting, got: 022.  It might still work
-W- Class mts_ros_crtk_ndi_bridge: add_factory_source: factory already added for component "NDI" with interface "Controller"
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
--W mtsEventReceiverBase: Creating local thread signal for event ConnectResult
--W TriggerFinishedEventIfNeeded: result valid = 0, result OK = 1, msg = command succeeded
--W TriggerFinishedEventIfNeeded: result valid = 0, result OK = 1, msg = command succeeded
--W TriggerFinishedEventIfNeeded: result valid = 0, result OK = 1, msg = command succeeded
--W TriggerFinishedEventIfNeeded: result valid = 0, result OK = 1, msg = command succeeded
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
-M- osaThread::CreateInternal: create thread named: Unnamed
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 568 -  ResponseRead: expected "024", but received "022"
--W Class mtsNDISerial: NDI:Controller: 1.66482e+09s, #2: NDI: device firmware is not what we're expecting, got: 022.  It might still work
-E- cmnNamedMap::AddItem: map "PortToTool" already contains an item named "01".
-W- Class mtsNDISerial: AddTool: there's already a tool with unique ID "02-3B115800-960556", name: 02-3B115800-960556.  Ignoring request to add tool
--W TriggerFinishedEventIfNeeded: result valid = 0, result OK = 1, msg = command succeeded
--W TriggerFinishedEventIfNeeded: result valid = 0, result OK = 1, msg = command succeeded
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 595 -  ResponseCheckCRC: received "TX 0801", but computed "5443" for CRC
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 548 -  ResponseRead: read command timed out (timeout is 5s)
--E Class mtsNDISerial: File: mtsNDISerial.cpp Line: 516 -  SendCommand: sent only -1 of 8 for command "TX 0801"
-W- cmnQtQApplicationExitsOnCtrlC_SignalHandler: exiting Qt Core Application
-M- Class cmnClassRegister: SetLogMaskClassAll: log mask has been set to "  " for the following classes: cmnBool, cmnChar, cmnCommandLineOptions, cmnDeSerializer, cmnDouble, cmnInt, cmnLoggerQtWidget, cmnLong, cmnLongLong, cmnPath, cmnSerializer, cmnShort, cmnUChar, cmnUInt, cmnULong, cmnULongLong, cmnUShort, mtsBool, mtsBool1, mtsBool2, mtsBool3, mtsBool4, mtsBool5, mtsBool6, mtsBoolMat, mtsBoolVec, mtsChar, mtsChar1, mtsChar2, mtsChar3, mtsChar4, mtsChar5, mtsChar6, mtsCharMat, mtsCharVec, mtsCollectorEvent, mtsCollectorFactory, mtsCollectorQtComponent, mtsCollectorQtFactory, mtsCollectorState, mtsComponent, mtsComponentAddLatency, mtsComponentConstructorArg, mtsComponentConstructorArgProxy, mtsComponentConstructorNameAndDouble, mtsComponentConstructorNameAndInt, mtsComponentConstructorNameAndLong, mtsComponentConstructorNameAndString, mtsComponentConstructorNameAndUInt, mtsComponentConstructorNameAndULong, mtsComponentStateChangeProxy, mtsComponentStateProxy, mtsComponentStatusControlProxy, mtsComponentViewer, mtsConnection, mtsDescriptionComponentClassProxy, mtsDescriptionComponentClassVecProxy, mtsDescriptionComponentProxy, mtsDescriptionConnectionProxy, mtsDescriptionConnectionVecProxy, mtsDescriptionInterfaceFullNameProxy, mtsDescriptionInterfaceFullNameVecProxy, mtsDescriptionInterfaceProxy, mtsDescriptionLoadLibraryProxy, mtsDouble, mtsDouble1, mtsDouble2, mtsDouble3, mtsDouble4, mtsDouble5, mtsDouble6, mtsDoubleAnRot2, mtsDoubleAxAnRot3, mtsDoubleFrm4x4, mtsDoubleMat, mtsDoubleMatFrm3, mtsDoubleMatRot2, mtsDoubleMatRot3, mtsDoubleQuat, mtsDoubleQuatFrm3, mtsDoubleQuatRot3, mtsDoubleRodRot3, mtsDoubleVec, mtsEndUserInterfaceArgProxy, mtsEventHandlerList, mtsExecutionResultProxy, mtsFloat, mtsFloat1, mtsFloat2, mtsFloat3, mtsFloat4, mtsFloat5, mtsFloat6, mtsFloatAnRot2, mtsFloatAxAnRot3, mtsFloatFrm4x4, mtsFloatMat, mtsFloatMatFrm3, mtsFloatMatRot2, mtsFloatMatRot3, mtsFloatQuat, mtsFloatQuatFrm3, mtsFloatQuatRot3, mtsFloatRodRot3, mtsFloatVec, mtsInt, mtsInt1, mtsInt2, mtsInt3, mtsInt4, mtsInt5, mtsInt6, mtsIntMat, mtsIntVec, mtsInterfaceProvided, mtsInterfaceProvidedDescriptionProxy, mtsInterfaceRequired, mtsInterfaceRequiredDescriptionProxy, mtsIntervalStatistics, mtsIntervalStatisticsQtWidgetComponent, mtsLogMessage, mtsLong, mtsLongLong, mtsLongMat, mtsLongVec, mtsManagerComponentBase, mtsManagerComponentClient, mtsManagerComponentServer, mtsManagerComponentServices, mtsManagerGlobal, mtsManagerGlobalInterface, mtsManagerLocal, mtsManagerLocalInterface, mtsMessageProxy, mtsMessageQtWidgetComponent, mtsNDISerial, mtsNDISerialControllerQtWidget, mtsQtApplication, mtsQtApplicationConstructorArg, mtsQtWidgetBoolRead, mtsQtWidgetBoolVecRead, mtsQtWidgetBoolVecWrite, mtsQtWidgetBoolWrite, mtsQtWidgetComponent, mtsQtWidgetDoubleRead, mtsQtWidgetDoubleVecRead, mtsQtWidgetDoubleVecWrite, mtsQtWidgetDoubleWrite, mtsQtWidgetEvent, mtsQtWidgetFunction, mtsQtWidgetIntRead, mtsQtWidgetIntWrite, mtsQtWidgetInterfaceRequired, mtsQtWidgetStateIndexRead, mtsQtWidgetStateIndexWrite, mtsQtWidgetStdStringRead, mtsQtWidgetStdStringWrite, mtsROSBridge, mtsShort, mtsShortMat, mtsShortVec, mtsSocketProxyClient, mtsSocketProxyClientConstructorArg, mtsSocketProxyInitData, mtsSocketProxyServer, mtsSocketProxyServerConstructorArg, mtsStateIndex, mtsStateTable, mtsStateTableIndexRange, mtsStdCharVecProxy, mtsStdDoubleVecProxy, mtsStdString, mtsStdStringListProxy, mtsStdStringVec, mtsStdStringVecProxy, mtsStdVct3VecProxy, mtsSystemQtWidgetComponent, mtsTask, mtsTaskConstructorArg, mtsTaskConstructorArgProxy, mtsTaskContinuous, mtsTaskContinuousConstructorArg, mtsTaskContinuousConstructorArgProxy, mtsTaskFromCallback, mtsTaskFromCallbackAdapter, mtsTaskFromSignal, mtsTaskMain, mtsTaskPeriodic, mtsTaskPeriodicConstructorArg, mtsTaskPeriodicConstructorArgProxy, mtsUChar, mtsUChar1, mtsUChar2, mtsUChar3, mtsUChar4, mtsUChar5, mtsUChar6, mtsUCharMat, mtsUCharVec, mtsUInt, mtsUInt1, mtsUInt2, mtsUInt3, mtsUInt4, mtsUInt5, mtsUInt6, mtsUIntMat, mtsUIntVec, mtsULong, mtsULongMat, mtsULongVec, mtsUShort, mtsUShortMat, mtsUShortVec, mtsVct1, mtsVct2, mtsVct2x2, mtsVct3, mtsVct3x3, mtsVct4, mtsVct4x4, mtsVct5, mtsVct6, mtsVct7, mtsVct8, mtsVct9, mtsVctBool1, mtsVctBool2, mtsVctBool3, mtsVctBool4, mtsVctBool5, mtsVctBool6, mtsVctBool7, mtsVctBool8, mtsVctBool9, mtsVctBoolVec, mtsVctChar1, mtsVctChar2, mtsVctChar3, mtsVctChar4, mtsVctChar5, mtsVctChar6, mtsVctChar7, mtsVctChar8, mtsVctChar9, mtsVctCharVec, mtsVctDoubleMat, mtsVctDoubleVec, mtsVctFloat1, mtsVctFloat2, mtsVctFloat3, mtsVctFloat4, mtsVctFloat5, mtsVctFloat6, mtsVctFloat7, mtsVctFloat8, mtsVctFloat9, mtsVctFloatMat, mtsVctFloatVec, mtsVctFrm3, mtsVctFrm4x4, mtsVctInt1, mtsVctInt2, mtsVctInt3, mtsVctInt4, mtsVctInt5, mtsVctInt6, mtsVctInt7, mtsVctInt8, mtsVctInt9, mtsVctIntMat, mtsVctIntVec, mtsVctLong1, mtsVctLong2, mtsVctLong3, mtsVctLong4, mtsVctLong5, mtsVctLong6, mtsVctLong7, mtsVctLong8, mtsVctLong9, mtsVctLongVec, mtsVctMatRot3, mtsVctShort1, mtsVctShort2, mtsVctShort3, mtsVctShort4, mtsVctShort5, mtsVctShort6, mtsVctShort7, mtsVctShort8, mtsVctShort9, mtsVctShortVec, mtsVctUChar1, mtsVctUChar2, mtsVctUChar3, mtsVctUChar4, mtsVctUChar5, mtsVctUChar6, mtsVctUChar7, mtsVctUChar8, mtsVctUChar9, mtsVctUCharVec, mtsVctUInt1, mtsVctUInt2, mtsVctUInt3, mtsVctUInt4, mtsVctUInt5, mtsVctUInt6, mtsVctUInt7, mtsVctUInt8, mtsVctUInt9, mtsVctUIntVec, mtsVctULong1, mtsVctULong2, mtsVctULong3, mtsVctULong4, mtsVctULong5, mtsVctULong6, mtsVctULong7, mtsVctULong8, mtsVctULong9, mtsVctULongVec, mtsVctUShort1, mtsVctUShort2, mtsVctUShort3, mtsVctUShort4, mtsVctUShort5, mtsVctUShort6, mtsVctUShort7, mtsVctUShort8, mtsVctUShort9, mtsVctUShortVec, mtsWatchdogClient, mtsWatchdogServer, mts_ros_crtk_bridge_provided, mts_ros_crtk_bridge_required, mts_ros_crtk_ndi_bridge, osaSerialPort, osaSocket, osaSocketServer, osaTimeServer, prmActuatorJointCouplingProxy, prmActuatorParameters, prmActuatorState, prmCartesianImpedanceGains, prmCartesianImpedanceGainsProxy, prmConfigurationJoint, prmConfigurationJointProxy, prmEventButton, prmEventButtonQtWidgetComponent, prmForceCartesianGet, prmForceCartesianSet, prmForceTorqueJointSet, prmGainParameters, prmIMUSensors, prmIMUSensorsProxy, prmInputData, prmInputDataProxy, prmInputDataQtWidgetComponent, prmJointTypeProxy, prmKeyValueProxy, prmMaskedBoolVec, prmMaskedCharVec, prmMaskedDoubleVec, prmMaskedFloatVec, prmMaskedIntVec, prmMaskedLongVec, prmMaskedShortVec, prmMaskedUCharVec, prmMaskedUIntVec, prmMaskedULongVec, prmMaskedUShortVec, prmOperatingState, prmOperatingStateProxy, prmPositionCartesianArrayGet, prmPositionCartesianArrayGetProxy, prmPositionCartesianArrayGetQtWidget, prmPositionCartesianGet, prmPositionCartesianGetProxy, prmPositionCartesianSet, prmPositionCartesianSetProxy, prmPositionJointGet, prmPositionJointGetProxy, prmPositionJointSet, prmPositionJointSetProxy, prmRobotState, prmStateJoint, prmStateJointProxy, prmStateRobotQtWidgetComponent, prmTransformationBase, prmTransformationDynamic, prmTransformationFixed, prmTransformationManager, prmVelocityCartesianGet, prmVelocityCartesianGetProxy, prmVelocityCartesianSet, prmVelocityJointGet, prmVelocityJointSet, 
-M- Class cmnLogger: SetMaskFunction: function mask set to "  "

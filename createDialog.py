@@ -7,7 +7,7 @@ import sys
 from SmartDrillDataBase import SmartDrillDataBase
 from pathlib import Path
 import config
-from sensors import NDI
+from sensors import NDI, FT
 
 
 class CreateDialog(QDialog):
@@ -57,9 +57,15 @@ class CreateDialog(QDialog):
             self.mainWindow.sensorList["Current"] = None
             self.mainWindow.HzSetting["Current"] = self.createDialog.spinBoxCurrent.value()
         if self.createDialog.checkBoxFT.isChecked():
-            #TODO
-            self.mainWindow.sensorList["FT"] = None
-            self.mainWindow.HzSetting["FT"] = self.createDialog.spinBoxFT.value()
+            try:
+                self.mainWindow.HzSetting["FT"] = self.createDialog.spinBoxFT.value()
+                self.mainWindow.sensorList["FT"] = FT.FT(self.mainWindow.HzSetting["FT"],self.mainWindow,config.FTSetting)
+            except:
+                msgBox = QMessageBox()
+                msgBox.setText("Fail to config FT. Please check your configuration file.")
+                msgBox.setWindowTitle("FT Error") 
+                msgBox.exec_()
+                return
         if not self.mainWindow.sensorList:
             msgBox = QMessageBox()
             msgBox.setText("Please select at least one type of sensor.")
